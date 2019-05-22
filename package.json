@@ -1,0 +1,24 @@
+{
+  "bin": {
+    "unify": "./bin/unify"
+  },
+  "name": "serverless-unify",
+  "version": "0.1.0",
+  "description": "Tool for deriving a master serverless.yml file from many smaller ones, spread throughout the codebase.",
+  "main": "src/unifier.js",
+  "os": [
+    "linux"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "serverless",
+    "development"
+  ],
+  "author": "Joel Luukka",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "3.13.1"
+  }
+}

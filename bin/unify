@@ -1,0 +1,3 @@
+#!/bin/bash -e
+SERVERLESS_FILES=$(find $(pwd) -name _serverless.yml)
+node ./src/cli_main "$SERVERLESS_FILES" > serverless.yml
