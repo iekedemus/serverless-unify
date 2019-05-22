@@ -1,5 +1,0 @@
-b:
-  gasd: 1
-functions:
-  one:
-    handler: src/handler
