@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+const { unifier } = require('../src/unifier');
+
+unifier(process.argv[2]).then(config => console.log(config));

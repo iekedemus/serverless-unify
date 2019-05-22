@@ -1,3 +1,4 @@
 #!/bin/bash -e
+bin_dir="$( cd "$(dirname "$0")" ; pwd -P )"
 SERVERLESS_FILES=$(find $(pwd) -name _serverless.yml)
-node ./src/cli_main "$SERVERLESS_FILES" > serverless.yml
+node "$bin_dir/_serverless-unify" "$SERVERLESS_FILES" > serverless.yml
