@@ -62,3 +62,6 @@ typings/
 
 # CLI output
 serverless.yml
+
+# Test files
+test

@@ -1,7 +1,7 @@
 {
   "bin": {
-    "serverless-unify": "./bin/unify",
-    "_serverless-unify": "./bin/cli_main"
+    "serverless-unify": "./bin/serverless-unify",
+    "_serverless-unify": "./bin/_serverless-unify"
   },
   "name": "@iekedemus/serverless-unify",
   "version": "1.0.1",
