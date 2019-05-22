@@ -1,6 +1,6 @@
 {
   "bin": {
-    "unify": "./bin/unify"
+    "serverless-unify": "./bin/unify"
   },
   "name": "@iekedemus/serverless-unify",
   "version": "1.0.0",
