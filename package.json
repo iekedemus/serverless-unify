@@ -2,7 +2,7 @@
   "bin": {
     "unify": "./bin/unify"
   },
-  "name": "serverless-unify",
+  "name": "@iekedemus/serverless-unify",
   "version": "1.0.0",
   "description": "Tool for deriving a master serverless.yml file from many smaller ones, spread throughout the codebase.",
   "main": "src/unifier.js",
@@ -17,6 +17,10 @@
     "serverless",
     "development"
   ],
+  "homepage": "https://github.com/iekedemus/serverless-unify",
+  "bugs": {
+    "url": "https://github.com/iekedemus/serverless-unify/issues"
+  },
   "author": "Joel Luukka",
   "license": "MIT",
   "dependencies": {
