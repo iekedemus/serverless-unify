@@ -4,7 +4,7 @@
     "_serverless-unify": "./bin/cli_main"
   },
   "name": "@iekedemus/serverless-unify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tool for deriving a master serverless.yml file from many smaller ones, spread throughout the codebase.",
   "main": "src/unifier.js",
   "os": [
