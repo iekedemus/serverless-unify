@@ -2,6 +2,7 @@ const fs = require('fs');
 const { promisify } = require('util');
 const path = require('path');
 const yaml = require('js-yaml');
+const deepmerge = require('deepmerge');
 
 const {
   pipe,
@@ -23,22 +24,7 @@ const getValueOrDefault = def => val => {
   return val !== undefined ? val : def;
 };
 
-const mergeConfigs = configs => {
-  const [functions, resources] = pipe(
-    map(key => configs.map(config => config[key])),
-    map(entries => Object.assign({}, ...entries)),
-  )(['functions', 'resources']);
-
-  const mergedConfig = Object.assign(
-    {},
-    ...configs,
-    { functions },
-    { resources },
-  );
-
-  return mergedConfig;
-};
-
+const mergeConfigs = configs => deepmerge(...configs);
 /* ******* */
 
 const sanitizeAndSortFiles = pipe(
