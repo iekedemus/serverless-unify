@@ -24,7 +24,7 @@ const getValueOrDefault = def => val => {
   return val !== undefined ? val : def;
 };
 
-const mergeConfigs = configs => deepmerge(...configs);
+const mergeConfigs = configs => deepmerge.all(configs);
 /* ******* */
 
 const sanitizeAndSortFiles = pipe(
