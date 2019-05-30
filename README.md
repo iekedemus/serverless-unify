@@ -17,7 +17,7 @@ Write parts of serverless configuration anywhere in the codebase in files by the
 ### Unify
 Create a unified `serverless.yml` by running at the root of your service:
 ```
-./node_modules/.bin/serverless-unify
+./node_modules/.bin/serverless-unify > ./serverless.yml
 ```
 
 ### Deploy serverless service!
